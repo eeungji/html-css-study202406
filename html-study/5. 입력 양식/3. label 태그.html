@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    label {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  
+<!-- url 정해지지 않으면 # 사용 -->
+  <form action="#">
+
+    <!-- label로 감싸줌으로써 input 태그와
+     자동로그인 이라는 텍스트를 하나로 봄. -->
+  <label>
+    <input type="checkbox"> 자동로그인
+  </label>
+  
+  <!-- display 속성 인라인 
+   label 태그는 대부분 block으로 바꿔서 씀
+   그리고 브라우저에서 이름을 클릭해도 커서가 나타남.
+   = 포커싱이 됨.-->
+  <label>
+    이름: <input type="text">
+  </label>
+
+
+  <!-- label과 input만 감싸기 -->
+   <!-- 아이디 기억하기를 누르면
+    아래 input checkbox가 체크됨. -->
+  <label for="remember">아이디 기억하기</label>
+
+  <div>hello</div>
+  <div>hello</div>
+  <div>hello</div>
+  <div>hello</div>
+  <div>hello</div>
+  
+  <input id="remember" type="checkbox">
+
+  </form>
+
+</body>
+</html>

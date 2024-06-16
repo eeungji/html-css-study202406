@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="black">
+
+  <!-- text 넓은 텍스으 박스가 생성되고 
+   눈에 보이는 최대행이 10행임. -->
+  <textarea class="red" cols="10" rows="5"></textarea>
+
+  <br id="apple" class="black soccer fruit">
+  <!-- class 여러개 배치 가능 그룹화할때 사용 
+   id class 태그들을 찾기 쉽게 하기 위해 사용-->
+
+  <!-- value에 쓰는게 서버에 전송하는 것
+   한글은 클라이언트에게 보여지는 것 
+   selected 는 화면에 보여지는 기본값
+   프라푸치노를 보여주고 시작함.
+   게시판에서 검색 종류가 유지되는 이유-->
+   
+   <!-- disabled 선택 불가 흑백처리됨.-->
+
+   <!-- 전역 속성이란?
+    option 요소 value 속성
+    option 요소에 dusabked 속성 -->
+  <select id="grape">
+    <option value="1">아메리카노</option>
+    <option disabled ="2">카페라떼</option>
+    <option selected value="3">프라푸치노</option>
+    <option id="orange" value="4">오렌지주스</option>
+  </select>
+
+  <!-- input에 selected 사용 불가 
+   왜냐하면 option의 전용 속성 -->
+  <input id="cherry"  type="text" selected>
+  
+  <!-- div에 type 속성 불가
+   input 전용이기 때문 
+   href도 불가 a 태그 전용이기 때문
+   src는 이미지
+   
+   아무대나 다 붙어도 되는 속성이 전역속성-->
+
+  <div type="" href=""></div>
+
+  <!-- class, id는 아무대나 다 붙여도 되는 속성
+   class 그룹의 이름(중복되도 됨)
+   id는 개인 이름(중복이 안되는게 좋음) -->
+   <div id="banana"></div>
+
+   <!-- 이렇게 쓰면 안됨. 알고만 있어라 style도 전역속성 아무대나 써또 됨
+    title도 아무대나 써도 됨 -->
+   <div class="red" 
+   style="height: 100px;
+   background: orange;"
+   title="메롱메롱"
+   
+   data-dog="cat"></div>
+   <!-- 오렌지 박스에 마우스 올리면 메롱메롱이 띄워짐-->
+    <!-- 속성 이름 만들 수 있음. data- 붙이면 됨 w전역속성 -->
+  
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    input {
+      /* height: 100px;  */
+      display: inline-block;    
+    }
+
+    button {
+      /* width: 60px; */
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 단축키 ctrl alt t -->
+
+  <form action="http://www.naver.com">
+    <!-- readonly 속성은 수정은 불가능하지만 데이터가 서버로 전송됨,
+    disabled 속성은 수정도 불가능하고 데이터가 서버로 전송되지 않음. -->
+    <input type="text" value="춘식이" placeholder="이름을 쓰세요" readonly>
+    <br> <input type="password">
+    <br> <input type="email">
+    <br> <input type="checkbox" name="hobby" > 게임
+    <input type="checkbox" name="hobby" disabled> 수영
+    <input type="checkbox" name="hobby" checked> 축구
+    <!-- name 맞춰주는거 중요 / 하나의 그룹으로 만들기 위해 -->
+    <!-- disabled 체크박스 잠궈 놓기 -->
+    <!-- checked 트루 폴스 옵션  -->
+    <br>
+    <input type="radio" name="mail" checked> 예
+    <input type="radio"name="mail" disabled> 아니오
+    <!-- radio 이거 아니면 저거 -->
+    <br>
+    <input
+      type="number"
+      value="5"
+      min="3"
+      max="5"
+    >
+    <!-- 숫자만 입력(쇼핑몰)/ value 초기 숫자 설정 -->
+    <br>
+    <input type="range" value="7" min="0" max="10">
+    <br>
+    <input type="file" multiple
+    accept="image/*">
+    <!-- multiple 파일 여러개 선택 가능 -->
+     <!-- accept : 이미지만 업로드 가능 -->
+    
+    <!-- 사용자 몰래 서버로 보낼 데이터 -->
+    <input type="hidden" name="nick"
+    value="똥멍청이">
+
+
+    <br> 
+    <!-- 깡통 버튼, 커스텀 가능 -->
+    <button type="button">button</button>
+    <!-- action으로 이동 제출할 때 -->
+    <button type="submit">submit</button>
+    <!-- 초기상태로 되돌아감 -->
+    <button type="reset">reset</button>
+
+    <!-- 버튼을 만들 떄는 무조건 버튼으로 만들기
+     직관성 태그에서 직관성 , 닫는 태그가 있다와 없다.
+     버튼은 자식 태그 넣을 수 있다.
+     input은 자식 태그를 넣을 수 없다. 
+     때문에 버튼을 만들 때는 버튼 태그-->
+    <input type="button" value="뻐튼">
+
+
+  </form>
+
+  
+
+
+  
+</body>
+</html>
